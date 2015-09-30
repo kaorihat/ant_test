@@ -1,0 +1,9 @@
+<project name="sample_project" default="A" basedir=".">
+<target name="A">
+<echo>building target A</echo>
+</target>
+<target name="B" if="test" depends="A">
+<echo>building target B</echo>
+<echo>test=${test}</echo>
+</target>
+</project>
