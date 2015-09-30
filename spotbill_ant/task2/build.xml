@@ -1,0 +1,13 @@
+<project name="sample" default="show-project" basedir=".">
+
+
+<target name="show-project">
+	<echo message="project name = ${ant.project.name}" />
+</target>
+<target name="show-user" depends="show-project">
+	<echo message="user.name=${user.name}" />
+</target>
+<target name="show-jre-version" depends="show-project">
+	<echo message="java.version=${ant.java.version}" />
+</target>
+</project>
